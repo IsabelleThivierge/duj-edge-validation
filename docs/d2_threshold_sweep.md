@@ -1,25 +1,17 @@
 # D2 — Threshold Sweep (Single Invariant)
-
 ## Overview
-
 This experiment evaluates how an event-triggered invariant constraint behaves as the activation threshold is varied.
-
 The goal is to measure whether bounded system behavior can be maintained while reducing correction frequency.
-
 ---
-
 ## Setup
-
 - Device: NVIDIA Jetson Orin Nano
 - Agents: 10,000
 - Steps: 120
 - Mode: Event-triggered invariant enforcement
 - Variable: Threshold (trigger level for correction)
-
 ---
-
 ## Raw Output
-```
+
 Device: cuda
 Agents: 10000
 Steps: 120
@@ -36,32 +28,22 @@ thr=80000  | inv_int=4541430.65 | inv_max=79786.64 | proj=4/120 | maxabs=2.29 | 
 
 Done.
 
-
 ---
-
 ## Observations
-
 - The NULL system diverges (maxabs ≈ 5.60)
 - All thresholded configurations remain bounded (~1.95–2.29)
 - Correction frequency decreases significantly as threshold increases:
   - 60/120 → 4/120
 - Latency decreases with fewer corrections
-
 ---
-
 ## Interpretation
-
 This experiment shows that:
-
-- Stability does not require continuous enforcement
-- Event-triggered corrections maintain bounded behavior
+- Stability does not require continuous enforcement  
+- Event-triggered corrections maintain bounded behavior  
 - The threshold acts as a tunable tradeoff between:
-  - correction frequency
-  - computational cost
-  - tightness of control
-
+  - correction frequency  
+  - computational cost  
+  - tightness of control  
 ---
-
 ## Key Result
-
 Event-triggered invariant enforcement maintains bounded system behavior while reducing correction frequency by up to ~85% compared to stricter configurations.
