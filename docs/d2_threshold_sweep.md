@@ -11,6 +11,7 @@ The goal is to measure whether bounded system behavior can be maintained while r
 - Variable: Threshold (trigger level for correction)
 ---
 ## Raw Output
+```
 
 Device: cuda
 Agents: 10000
