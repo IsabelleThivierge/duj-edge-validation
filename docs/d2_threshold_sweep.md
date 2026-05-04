@@ -27,6 +27,7 @@ thr=20000  | inv_int=1097592.49 | inv_max=18464.07 | proj=17/120 | maxabs=1.95 |
 thr=40000  | inv_int=2341059.23 | inv_max=39949.29 | proj=8/120 | maxabs=2.16 | lat=217.1ms
 thr=80000  | inv_int=4541430.65 | inv_max=79786.64 | proj=4/120 | maxabs=2.29 | lat=207.5ms
 
+```
 Done.
 
 ---
