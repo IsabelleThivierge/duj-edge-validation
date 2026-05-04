@@ -1,5 +1,7 @@
 # DUJ Edge Validation — Results Summary
 
+Event-triggered invariant steering maintains bounded multi-agent dynamics while using ~28% of the correction budget of continuous enforcement on edge hardware.
+
 ## Overview
 
 This repository documents early validation results for an event-triggered invariant steering mechanism (DUJ / FEITH-R) evaluated on edge hardware.
