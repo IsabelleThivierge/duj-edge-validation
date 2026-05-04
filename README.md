@@ -41,6 +41,13 @@ See full breakdown:
 → [`docs/results_summary.md`](docs/results_summary.md)
 
 ---
+## Limitations
+
+- Single noise profile tested; behavior under different perturbation distributions unknown
+- Results from a single seed; cross-seed variance not yet characterized
+- Simulation environment; real multi-agent deployment not yet validated
+
+---
 
 ## Status
 
