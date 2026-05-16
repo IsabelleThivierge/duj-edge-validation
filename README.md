@@ -14,11 +14,10 @@ In adversarial multi-agent stress tests on **Jetson Orin Nano Super** (JetPack 6
 
 This is still early work. The emerging hypothesis is that **compute scaling and coordination scaling may be orthogonal problems**.
 
- Experiment note:  
-`docs/v0_4_adversarial_multi_agent_stress_test.md`
+## Resources
 
- Raw results:  
-`results/v0_4_adversarial/v31c_adversarial_results.txt`
+- 📄 [Experiment note](docs/v0_4_adversarial_multi_agent_stress_test.md)
+- 📊 [Raw results](results/v0_4_adversarial/v31c_adversarial_results.txt)
 
 Event-triggered invariant steering maintains bounded multi-agent dynamics on edge hardware with reduced correction cost.
 ---
