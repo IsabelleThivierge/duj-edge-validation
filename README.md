@@ -1,5 +1,25 @@
 # DUJ Edge Validation
 
+## Latest Result — Adversarial Multi-Agent Stress Test (v0.4)
+
+Early results suggest that coordination mechanism may matter as much as compute substrate for multi-agent viability.
+
+In adversarial multi-agent stress tests on **Jetson Orin Nano Super** (JetPack 6.2.1, CUDA), we observed:
+
+- **Event-gated coordination maintained zero agent deaths**
+- Graceful degradation under adversarial signal noise up to **50% false-positive rate**
+- Successful adaptation across **7-phase non-monotonic regime schedules**
+- Continuous supervision repeatedly collapsed under the same conditions
+- Coordination achieved at substantially lower intervention cost
+
+This is still early work. The emerging hypothesis is that **compute scaling and coordination scaling may be orthogonal problems**.
+
+ Experiment note:  
+`docs/v0_4_adversarial_multi_agent_stress_test.md`
+
+ Raw results:  
+`results/v0_4_adversarial/v31c_adversarial_results.txt`
+
 Event-triggered invariant steering maintains bounded multi-agent dynamics on edge hardware with reduced correction cost.
 ---
 

@@ -1,0 +1,238 @@
+
+===== DUJ V31C ADVERSARIAL SIGNAL NOISE =====
+device: cuda
+steps: 520
+agent_noise: 0.12
+segment length range: 18-55
+signal_levels: [{'false_prob': 0.0, 'delay': 0, 'regret_noise': 0.0}, {'false_prob': 0.1, 'delay': 2, 'regret_noise': 0.03}, {'false_prob': 0.2, 'delay': 5, 'regret_noise': 0.06}, {'false_prob': 0.35, 'delay': 8, 'regret_noise': 0.1}, {'false_prob': 0.5, 'delay': 12, 'regret_noise': 0.15}]
+seeds: [0, 1, 2, 3, 4]
+variants: ['FIELD_DUJ', 'FULLER_DUJ', 'PRIORITY_DUJ', 'CONTINUOUS']
+
+############################################################################################
+SIGNAL LEVEL 0: false_prob=0.00, delay=0, regret_noise=0.00
+
+========================================================================
+FIELD_DUJ @ signal_level=0
+seed=0 | segments=16/16 | recover=15/15 | lat=2.40 | final=True | stable=True | overshoot=0.76 | regret_auc=8.99 | avg_d=1.65 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4615 | deaths=0 | V=489 | T=67 | M=0 | CO=67 | false_events=0
+seed=1 | segments=15/16 | recover=15/15 | lat=2.80 | final=True | stable=True | overshoot=1.27 | regret_auc=13.76 | avg_d=2.33 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4681 | deaths=0 | V=498 | T=58 | M=0 | CO=58 | false_events=0
+seed=2 | segments=16/17 | recover=16/16 | lat=2.06 | final=True | stable=True | overshoot=1.12 | regret_auc=13.93 | avg_d=2.21 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4700 | deaths=0 | V=494 | T=61 | M=0 | CO=61 | false_events=0
+seed=3 | segments=14/15 | recover=14/14 | lat=2.21 | final=True | stable=True | overshoot=1.21 | regret_auc=11.14 | avg_d=2.15 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4630 | deaths=0 | V=486 | T=58 | M=0 | CO=58 | false_events=0
+seed=4 | segments=12/13 | recover=11/12 | lat=1.55 | final=False | stable=True | overshoot=0.37 | regret_auc=5.59 | avg_d=1.03 | d_final=8.0 | utility=0.910 | regret=0.090 | corr=4702 | deaths=0 | V=486 | T=44 | M=0 | CO=44 | false_events=0
+SUMMARY level=0 variant=FIELD_DUJ | false=0.00 delay=0 rnoise=0.00 | segments=73/77 | seg_rate=0.947 | recovery=71/72 | lat=2.20 | final=4/5 | stable=5/5 | overshoot=0.95 | regret_auc=10.68 | avg_d=1.88 | final_d=1.60 | utility=0.982 | regret=0.018 | corr=4665.6 | deaths=0.0 | CO=57.6 | false_events=0.0
+
+========================================================================
+FULLER_DUJ @ signal_level=0
+seed=0 | segments=3/16 | recover=12/15 | lat=40.33 | final=False | stable=True | overshoot=6.78 | regret_auc=71.87 | avg_d=12.91 | d_final=8.0 | utility=0.935 | regret=0.065 | corr=5091 | deaths=0 | V=490 | T=20 | M=0 | CO=0 | false_events=0
+seed=1 | segments=5/16 | recover=13/15 | lat=63.92 | final=False | stable=True | overshoot=7.53 | regret_auc=81.67 | avg_d=14.34 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=5166 | deaths=0 | V=498 | T=25 | M=0 | CO=0 | false_events=0
+seed=2 | segments=2/17 | recover=15/16 | lat=27.80 | final=False | stable=True | overshoot=6.78 | regret_auc=78.70 | avg_d=13.48 | d_final=16.0 | utility=0.825 | regret=0.175 | corr=5169 | deaths=0 | V=495 | T=25 | M=0 | CO=0 | false_events=0
+seed=3 | segments=5/15 | recover=14/14 | lat=41.50 | final=False | stable=True | overshoot=7.34 | regret_auc=73.91 | avg_d=13.40 | d_final=4.0 | utility=0.955 | regret=0.045 | corr=5021 | deaths=0 | V=489 | T=24 | M=0 | CO=0 | false_events=0
+seed=4 | segments=7/13 | recover=11/12 | lat=35.73 | final=False | stable=True | overshoot=4.88 | regret_auc=59.31 | avg_d=10.25 | d_final=40.0 | utility=0.462 | regret=0.538 | corr=5202 | deaths=0 | V=485 | T=24 | M=0 | CO=0 | false_events=0
+SUMMARY level=0 variant=FULLER_DUJ | false=0.00 delay=0 rnoise=0.00 | segments=22/77 | seg_rate=0.298 | recovery=65/72 | lat=41.86 | final=0/5 | stable=5/5 | overshoot=6.66 | regret_auc=73.09 | avg_d=12.88 | final_d=16.80 | utility=0.791 | regret=0.209 | corr=5129.8 | deaths=0.0 | CO=0.0 | false_events=0.0
+
+========================================================================
+PRIORITY_DUJ @ signal_level=0
+seed=0 | segments=0/16 | recover=15/15 | lat=50.00 | final=False | stable=True | overshoot=7.83 | regret_auc=81.87 | avg_d=14.46 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=5010 | deaths=0 | V=489 | T=0 | M=0 | CO=0 | false_events=0
+seed=1 | segments=0/16 | recover=12/15 | lat=32.17 | final=False | stable=True | overshoot=8.06 | regret_auc=86.49 | avg_d=14.88 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=5104 | deaths=0 | V=498 | T=0 | M=0 | CO=0 | false_events=0
+seed=2 | segments=0/17 | recover=16/16 | lat=37.19 | final=False | stable=True | overshoot=8.03 | regret_auc=87.08 | avg_d=14.87 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=5117 | deaths=0 | V=495 | T=0 | M=0 | CO=0 | false_events=0
+seed=3 | segments=0/15 | recover=10/14 | lat=42.50 | final=False | stable=True | overshoot=8.28 | regret_auc=87.21 | avg_d=15.12 | d_final=24.0 | utility=0.780 | regret=0.220 | corr=5082 | deaths=0 | V=488 | T=0 | M=0 | CO=0 | false_events=0
+seed=4 | segments=0/13 | recover=10/12 | lat=40.30 | final=False | stable=True | overshoot=8.72 | regret_auc=77.75 | avg_d=15.20 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=4802 | deaths=0 | V=484 | T=0 | M=0 | CO=0 | false_events=0
+SUMMARY level=0 variant=PRIORITY_DUJ | false=0.00 delay=0 rnoise=0.00 | segments=0/77 | seg_rate=0.000 | recovery=63/72 | lat=40.43 | final=0/5 | stable=5/5 | overshoot=8.18 | regret_auc=84.08 | avg_d=14.91 | final_d=12.80 | utility=0.853 | regret=0.147 | corr=5023.0 | deaths=0.0 | CO=0.0 | false_events=0.0
+
+========================================================================
+CONTINUOUS @ signal_level=0
+seed=0 | segments=0/16 | recover=15/15 | lat=50.00 | final=False | stable=True | overshoot=7.83 | regret_auc=81.87 | avg_d=14.46 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=1 | segments=0/16 | recover=12/15 | lat=32.17 | final=False | stable=True | overshoot=8.06 | regret_auc=86.49 | avg_d=14.88 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=2 | segments=0/17 | recover=16/16 | lat=37.19 | final=False | stable=True | overshoot=8.03 | regret_auc=87.08 | avg_d=14.87 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=3 | segments=0/15 | recover=10/14 | lat=42.50 | final=False | stable=True | overshoot=8.28 | regret_auc=87.21 | avg_d=15.12 | d_final=24.0 | utility=0.780 | regret=0.220 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=4 | segments=0/13 | recover=10/12 | lat=40.30 | final=False | stable=True | overshoot=8.72 | regret_auc=77.75 | avg_d=15.20 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+SUMMARY level=0 variant=CONTINUOUS | false=0.00 delay=0 rnoise=0.00 | segments=0/77 | seg_rate=0.000 | recovery=63/72 | lat=40.43 | final=0/5 | stable=5/5 | overshoot=8.18 | regret_auc=84.08 | avg_d=14.91 | final_d=12.80 | utility=0.853 | regret=0.147 | corr=133120.0 | deaths=0.0 | CO=0.0 | false_events=0.0
+
+############################################################################################
+SIGNAL LEVEL 1: false_prob=0.10, delay=2, regret_noise=0.03
+
+========================================================================
+FIELD_DUJ @ signal_level=1
+seed=0 | segments=14/16 | recover=15/15 | lat=5.00 | final=True | stable=True | overshoot=2.27 | regret_auc=22.02 | avg_d=3.95 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4679 | deaths=0 | V=489 | T=97 | M=0 | CO=96 | false_events=741
+seed=1 | segments=14/16 | recover=15/15 | lat=5.47 | final=False | stable=True | overshoot=2.56 | regret_auc=25.51 | avg_d=4.40 | d_final=12.0 | utility=0.843 | regret=0.157 | corr=4740 | deaths=0 | V=496 | T=84 | M=0 | CO=84 | false_events=774
+seed=2 | segments=15/17 | recover=16/16 | lat=3.88 | final=True | stable=True | overshoot=2.12 | regret_auc=23.16 | avg_d=3.83 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4756 | deaths=0 | V=492 | T=81 | M=0 | CO=81 | false_events=767
+seed=3 | segments=14/15 | recover=14/14 | lat=4.64 | final=True | stable=True | overshoot=2.49 | regret_auc=22.18 | avg_d=4.12 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4677 | deaths=0 | V=486 | T=81 | M=0 | CO=80 | false_events=756
+seed=4 | segments=12/13 | recover=11/12 | lat=4.18 | final=False | stable=True | overshoot=1.47 | regret_auc=15.02 | avg_d=2.84 | d_final=24.0 | utility=0.686 | regret=0.314 | corr=4745 | deaths=0 | V=485 | T=73 | M=0 | CO=71 | false_events=730
+SUMMARY level=1 variant=FIELD_DUJ | false=0.10 delay=2 rnoise=0.03 | segments=69/77 | seg_rate=0.898 | recovery=71/72 | lat=4.63 | final=3/5 | stable=5/5 | overshoot=2.18 | regret_auc=21.58 | avg_d=3.83 | final_d=7.20 | utility=0.906 | regret=0.094 | corr=4719.4 | deaths=0.0 | CO=82.4 | false_events=753.6
+
+========================================================================
+FULLER_DUJ @ signal_level=1
+seed=0 | segments=2/16 | recover=15/15 | lat=61.60 | final=False | stable=True | overshoot=7.75 | regret_auc=84.39 | avg_d=14.29 | d_final=4.0 | utility=0.958 | regret=0.042 | corr=5285 | deaths=0 | V=490 | T=21 | M=0 | CO=0 | false_events=669
+seed=1 | segments=3/16 | recover=13/15 | lat=55.85 | final=False | stable=True | overshoot=9.42 | regret_auc=88.33 | avg_d=16.22 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=4976 | deaths=0 | V=495 | T=22 | M=0 | CO=0 | false_events=725
+seed=2 | segments=3/17 | recover=12/16 | lat=32.75 | final=False | stable=True | overshoot=7.31 | regret_auc=82.49 | avg_d=14.21 | d_final=16.0 | utility=0.825 | regret=0.175 | corr=5174 | deaths=0 | V=495 | T=23 | M=0 | CO=0 | false_events=711
+seed=3 | segments=3/15 | recover=14/14 | lat=41.36 | final=False | stable=True | overshoot=8.05 | regret_auc=81.87 | avg_d=14.45 | d_final=4.0 | utility=0.955 | regret=0.045 | corr=5073 | deaths=0 | V=491 | T=25 | M=0 | CO=0 | false_events=711
+seed=4 | segments=7/13 | recover=11/12 | lat=35.73 | final=False | stable=True | overshoot=4.75 | regret_auc=58.11 | avg_d=10.11 | d_final=40.0 | utility=0.462 | regret=0.538 | corr=5199 | deaths=0 | V=484 | T=24 | M=0 | CO=0 | false_events=649
+SUMMARY level=1 variant=FULLER_DUJ | false=0.10 delay=2 rnoise=0.03 | segments=18/77 | seg_rate=0.245 | recovery=65/72 | lat=45.46 | final=0/5 | stable=5/5 | overshoot=7.45 | regret_auc=79.04 | avg_d=13.85 | final_d=16.00 | utility=0.795 | regret=0.205 | corr=5141.4 | deaths=0.0 | CO=0.0 | false_events=693.0
+
+========================================================================
+PRIORITY_DUJ @ signal_level=1
+seed=0 | segments=0/16 | recover=15/15 | lat=50.00 | final=False | stable=True | overshoot=7.83 | regret_auc=81.87 | avg_d=14.46 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=5004 | deaths=0 | V=489 | T=0 | M=0 | CO=0 | false_events=710
+seed=1 | segments=0/16 | recover=12/15 | lat=32.17 | final=False | stable=True | overshoot=8.06 | regret_auc=86.49 | avg_d=14.88 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=5066 | deaths=0 | V=496 | T=0 | M=0 | CO=0 | false_events=757
+seed=2 | segments=0/17 | recover=16/16 | lat=37.19 | final=False | stable=True | overshoot=8.03 | regret_auc=87.08 | avg_d=14.87 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=5119 | deaths=0 | V=492 | T=0 | M=0 | CO=0 | false_events=758
+seed=3 | segments=0/15 | recover=10/14 | lat=42.50 | final=False | stable=True | overshoot=8.28 | regret_auc=87.21 | avg_d=15.12 | d_final=24.0 | utility=0.780 | regret=0.220 | corr=5063 | deaths=0 | V=488 | T=0 | M=0 | CO=0 | false_events=745
+seed=4 | segments=0/13 | recover=10/12 | lat=40.30 | final=False | stable=True | overshoot=8.72 | regret_auc=77.75 | avg_d=15.20 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=4818 | deaths=0 | V=482 | T=0 | M=0 | CO=0 | false_events=701
+SUMMARY level=1 variant=PRIORITY_DUJ | false=0.10 delay=2 rnoise=0.03 | segments=0/77 | seg_rate=0.000 | recovery=63/72 | lat=40.43 | final=0/5 | stable=5/5 | overshoot=8.18 | regret_auc=84.08 | avg_d=14.91 | final_d=12.80 | utility=0.853 | regret=0.147 | corr=5014.0 | deaths=0.0 | CO=0.0 | false_events=734.2
+
+========================================================================
+CONTINUOUS @ signal_level=1
+seed=0 | segments=0/16 | recover=15/15 | lat=50.00 | final=False | stable=True | overshoot=7.83 | regret_auc=81.87 | avg_d=14.46 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=1 | segments=0/16 | recover=12/15 | lat=32.17 | final=False | stable=True | overshoot=8.06 | regret_auc=86.49 | avg_d=14.88 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=2 | segments=0/17 | recover=16/16 | lat=37.19 | final=False | stable=True | overshoot=8.03 | regret_auc=87.08 | avg_d=14.87 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=3 | segments=0/15 | recover=10/14 | lat=42.50 | final=False | stable=True | overshoot=8.28 | regret_auc=87.21 | avg_d=15.12 | d_final=24.0 | utility=0.780 | regret=0.220 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=4 | segments=0/13 | recover=10/12 | lat=40.30 | final=False | stable=True | overshoot=8.72 | regret_auc=77.75 | avg_d=15.20 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+SUMMARY level=1 variant=CONTINUOUS | false=0.10 delay=2 rnoise=0.03 | segments=0/77 | seg_rate=0.000 | recovery=63/72 | lat=40.43 | final=0/5 | stable=5/5 | overshoot=8.18 | regret_auc=84.08 | avg_d=14.91 | final_d=12.80 | utility=0.853 | regret=0.147 | corr=133120.0 | deaths=0.0 | CO=0.0 | false_events=0.0
+
+############################################################################################
+SIGNAL LEVEL 2: false_prob=0.20, delay=5, regret_noise=0.06
+
+========================================================================
+FIELD_DUJ @ signal_level=2
+seed=0 | segments=14/16 | recover=15/15 | lat=8.13 | final=True | stable=True | overshoot=4.16 | regret_auc=38.47 | avg_d=6.79 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4730 | deaths=0 | V=489 | T=139 | M=0 | CO=138 | false_events=1502
+seed=1 | segments=13/16 | recover=14/15 | lat=7.79 | final=False | stable=True | overshoot=3.97 | regret_auc=38.82 | avg_d=6.79 | d_final=24.0 | utility=0.686 | regret=0.314 | corr=4727 | deaths=0 | V=495 | T=126 | M=0 | CO=125 | false_events=1486
+seed=2 | segments=13/17 | recover=16/16 | lat=6.62 | final=True | stable=True | overshoot=4.08 | regret_auc=41.57 | avg_d=7.21 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4661 | deaths=0 | V=493 | T=163 | M=0 | CO=160 | false_events=1590
+seed=3 | segments=12/15 | recover=14/14 | lat=7.71 | final=True | stable=True | overshoot=4.42 | regret_auc=40.52 | avg_d=7.24 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4706 | deaths=0 | V=488 | T=154 | M=0 | CO=152 | false_events=1545
+seed=4 | segments=9/13 | recover=11/12 | lat=7.82 | final=False | stable=True | overshoot=2.51 | regret_auc=25.90 | avg_d=4.82 | d_final=40.0 | utility=0.462 | regret=0.538 | corr=4795 | deaths=0 | V=486 | T=128 | M=0 | CO=124 | false_events=1531
+SUMMARY level=2 variant=FIELD_DUJ | false=0.20 delay=5 rnoise=0.06 | segments=61/77 | seg_rate=0.789 | recovery=70/72 | lat=7.62 | final=3/5 | stable=5/5 | overshoot=3.83 | regret_auc=37.05 | avg_d=6.57 | final_d=12.80 | utility=0.830 | regret=0.170 | corr=4723.8 | deaths=0.0 | CO=139.8 | false_events=1530.8
+
+========================================================================
+FULLER_DUJ @ signal_level=2
+seed=0 | segments=4/16 | recover=15/15 | lat=51.00 | final=True | stable=True | overshoot=9.00 | regret_auc=85.09 | avg_d=14.86 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=5124 | deaths=0 | V=489 | T=19 | M=0 | CO=0 | false_events=1322
+seed=1 | segments=4/16 | recover=13/15 | lat=41.77 | final=False | stable=True | overshoot=8.12 | regret_auc=86.42 | avg_d=14.86 | d_final=20.0 | utility=0.731 | regret=0.269 | corr=5197 | deaths=0 | V=497 | T=18 | M=0 | CO=0 | false_events=1358
+seed=2 | segments=2/17 | recover=12/16 | lat=31.50 | final=False | stable=True | overshoot=8.92 | regret_auc=95.61 | avg_d=16.28 | d_final=16.0 | utility=0.825 | regret=0.175 | corr=5209 | deaths=0 | V=493 | T=25 | M=0 | CO=0 | false_events=1398
+seed=3 | segments=2/15 | recover=10/14 | lat=98.20 | final=False | stable=True | overshoot=9.54 | regret_auc=93.35 | avg_d=16.80 | d_final=12.0 | utility=0.890 | regret=0.110 | corr=5124 | deaths=0 | V=490 | T=24 | M=0 | CO=0 | false_events=1395
+seed=4 | segments=6/13 | recover=11/12 | lat=28.36 | final=False | stable=True | overshoot=4.36 | regret_auc=54.43 | avg_d=9.26 | d_final=40.0 | utility=0.462 | regret=0.538 | corr=5347 | deaths=0 | V=483 | T=20 | M=0 | CO=0 | false_events=1403
+SUMMARY level=2 variant=FULLER_DUJ | false=0.20 delay=5 rnoise=0.06 | segments=18/77 | seg_rate=0.243 | recovery=61/72 | lat=50.17 | final=1/5 | stable=5/5 | overshoot=7.99 | regret_auc=82.98 | avg_d=14.41 | final_d=17.60 | utility=0.782 | regret=0.218 | corr=5200.2 | deaths=0.0 | CO=0.0 | false_events=1375.2
+
+========================================================================
+PRIORITY_DUJ @ signal_level=2
+seed=0 | segments=0/16 | recover=15/15 | lat=50.00 | final=False | stable=True | overshoot=7.83 | regret_auc=81.87 | avg_d=14.46 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=5026 | deaths=0 | V=490 | T=0 | M=0 | CO=0 | false_events=1439
+seed=1 | segments=0/16 | recover=12/15 | lat=32.17 | final=False | stable=True | overshoot=8.06 | regret_auc=86.49 | avg_d=14.88 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=5092 | deaths=0 | V=496 | T=0 | M=0 | CO=0 | false_events=1411
+seed=2 | segments=0/17 | recover=16/16 | lat=37.19 | final=False | stable=True | overshoot=8.03 | regret_auc=87.08 | avg_d=14.87 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=5087 | deaths=0 | V=492 | T=0 | M=0 | CO=0 | false_events=1472
+seed=3 | segments=0/15 | recover=10/14 | lat=42.50 | final=False | stable=True | overshoot=8.28 | regret_auc=87.21 | avg_d=15.12 | d_final=24.0 | utility=0.780 | regret=0.220 | corr=5040 | deaths=0 | V=488 | T=0 | M=0 | CO=0 | false_events=1458
+seed=4 | segments=0/13 | recover=10/12 | lat=40.30 | final=False | stable=True | overshoot=8.72 | regret_auc=77.75 | avg_d=15.20 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=4853 | deaths=0 | V=484 | T=0 | M=0 | CO=0 | false_events=1463
+SUMMARY level=2 variant=PRIORITY_DUJ | false=0.20 delay=5 rnoise=0.06 | segments=0/77 | seg_rate=0.000 | recovery=63/72 | lat=40.43 | final=0/5 | stable=5/5 | overshoot=8.18 | regret_auc=84.08 | avg_d=14.91 | final_d=12.80 | utility=0.853 | regret=0.147 | corr=5019.6 | deaths=0.0 | CO=0.0 | false_events=1448.6
+
+========================================================================
+CONTINUOUS @ signal_level=2
+seed=0 | segments=0/16 | recover=15/15 | lat=50.00 | final=False | stable=True | overshoot=7.83 | regret_auc=81.87 | avg_d=14.46 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=1 | segments=0/16 | recover=12/15 | lat=32.17 | final=False | stable=True | overshoot=8.06 | regret_auc=86.49 | avg_d=14.88 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=2 | segments=0/17 | recover=16/16 | lat=37.19 | final=False | stable=True | overshoot=8.03 | regret_auc=87.08 | avg_d=14.87 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=3 | segments=0/15 | recover=10/14 | lat=42.50 | final=False | stable=True | overshoot=8.28 | regret_auc=87.21 | avg_d=15.12 | d_final=24.0 | utility=0.780 | regret=0.220 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=4 | segments=0/13 | recover=10/12 | lat=40.30 | final=False | stable=True | overshoot=8.72 | regret_auc=77.75 | avg_d=15.20 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+SUMMARY level=2 variant=CONTINUOUS | false=0.20 delay=5 rnoise=0.06 | segments=0/77 | seg_rate=0.000 | recovery=63/72 | lat=40.43 | final=0/5 | stable=5/5 | overshoot=8.18 | regret_auc=84.08 | avg_d=14.91 | final_d=12.80 | utility=0.853 | regret=0.147 | corr=133120.0 | deaths=0.0 | CO=0.0 | false_events=0.0
+
+############################################################################################
+SIGNAL LEVEL 3: false_prob=0.35, delay=8, regret_noise=0.10
+
+========================================================================
+FIELD_DUJ @ signal_level=3
+seed=0 | segments=10/16 | recover=15/15 | lat=11.80 | final=True | stable=True | overshoot=6.41 | regret_auc=60.78 | avg_d=10.98 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4600 | deaths=0 | V=491 | T=262 | M=0 | CO=261 | false_events=2738
+seed=1 | segments=8/16 | recover=14/15 | lat=10.50 | final=False | stable=True | overshoot=5.75 | regret_auc=62.92 | avg_d=10.67 | d_final=20.0 | utility=0.731 | regret=0.269 | corr=4618 | deaths=0 | V=495 | T=290 | M=0 | CO=288 | false_events=2755
+seed=2 | segments=13/17 | recover=16/16 | lat=10.75 | final=True | stable=True | overshoot=6.50 | regret_auc=63.27 | avg_d=11.15 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4586 | deaths=0 | V=490 | T=274 | M=0 | CO=269 | false_events=2795
+seed=3 | segments=13/15 | recover=14/14 | lat=11.36 | final=True | stable=True | overshoot=6.98 | regret_auc=66.86 | avg_d=11.86 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4535 | deaths=0 | V=490 | T=295 | M=0 | CO=292 | false_events=2861
+seed=4 | segments=6/13 | recover=11/12 | lat=7.00 | final=False | stable=True | overshoot=4.00 | regret_auc=43.01 | avg_d=8.24 | d_final=40.0 | utility=0.462 | regret=0.538 | corr=4617 | deaths=0 | V=489 | T=279 | M=0 | CO=277 | false_events=2752
+SUMMARY level=3 variant=FIELD_DUJ | false=0.35 delay=8 rnoise=0.10 | segments=50/77 | seg_rate=0.644 | recovery=70/72 | lat=10.28 | final=3/5 | stable=5/5 | overshoot=5.93 | regret_auc=59.37 | avg_d=10.58 | final_d=12.00 | utility=0.839 | regret=0.161 | corr=4591.2 | deaths=0.0 | CO=277.4 | false_events=2780.2
+
+========================================================================
+FULLER_DUJ @ signal_level=3
+seed=0 | segments=4/16 | recover=13/15 | lat=42.08 | final=False | stable=True | overshoot=7.80 | regret_auc=81.17 | avg_d=13.29 | d_final=8.0 | utility=0.913 | regret=0.087 | corr=5349 | deaths=0 | V=489 | T=20 | M=0 | CO=0 | false_events=2342
+seed=1 | segments=4/16 | recover=12/15 | lat=38.67 | final=False | stable=True | overshoot=8.28 | regret_auc=88.06 | avg_d=15.23 | d_final=20.0 | utility=0.731 | regret=0.269 | corr=5207 | deaths=0 | V=497 | T=19 | M=0 | CO=0 | false_events=2380
+seed=2 | segments=3/17 | recover=16/16 | lat=40.94 | final=True | stable=True | overshoot=10.68 | regret_auc=99.33 | avg_d=17.05 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=5203 | deaths=0 | V=492 | T=21 | M=0 | CO=0 | false_events=2401
+seed=3 | segments=4/15 | recover=10/14 | lat=44.10 | final=False | stable=True | overshoot=10.05 | regret_auc=91.93 | avg_d=16.48 | d_final=36.0 | utility=0.695 | regret=0.305 | corr=5177 | deaths=0 | V=492 | T=21 | M=0 | CO=0 | false_events=2456
+seed=4 | segments=3/13 | recover=8/12 | lat=27.88 | final=False | stable=True | overshoot=6.67 | regret_auc=66.69 | avg_d=12.75 | d_final=28.0 | utility=0.619 | regret=0.381 | corr=5134 | deaths=0 | V=486 | T=22 | M=0 | CO=0 | false_events=2349
+SUMMARY level=3 variant=FULLER_DUJ | false=0.35 delay=8 rnoise=0.10 | segments=18/77 | seg_rate=0.235 | recovery=59/72 | lat=38.73 | final=1/5 | stable=5/5 | overshoot=8.70 | regret_auc=85.44 | avg_d=14.96 | final_d=18.40 | utility=0.792 | regret=0.208 | corr=5214.0 | deaths=0.0 | CO=0.0 | false_events=2385.6
+
+========================================================================
+PRIORITY_DUJ @ signal_level=3
+seed=0 | segments=0/16 | recover=15/15 | lat=50.00 | final=False | stable=True | overshoot=7.83 | regret_auc=81.87 | avg_d=14.46 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=4987 | deaths=0 | V=491 | T=0 | M=0 | CO=0 | false_events=2522
+seed=1 | segments=0/16 | recover=12/15 | lat=32.17 | final=False | stable=True | overshoot=8.06 | regret_auc=86.49 | avg_d=14.88 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=5040 | deaths=0 | V=496 | T=0 | M=0 | CO=0 | false_events=2515
+seed=2 | segments=0/17 | recover=16/16 | lat=37.19 | final=False | stable=True | overshoot=8.03 | regret_auc=87.08 | avg_d=14.87 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=5065 | deaths=0 | V=492 | T=0 | M=0 | CO=0 | false_events=2561
+seed=3 | segments=0/15 | recover=10/14 | lat=42.50 | final=False | stable=True | overshoot=8.28 | regret_auc=87.21 | avg_d=15.12 | d_final=24.0 | utility=0.780 | regret=0.220 | corr=5035 | deaths=0 | V=491 | T=0 | M=0 | CO=0 | false_events=2613
+seed=4 | segments=0/13 | recover=10/12 | lat=40.30 | final=False | stable=True | overshoot=8.72 | regret_auc=77.75 | avg_d=15.20 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=4909 | deaths=0 | V=486 | T=0 | M=0 | CO=0 | false_events=2523
+SUMMARY level=3 variant=PRIORITY_DUJ | false=0.35 delay=8 rnoise=0.10 | segments=0/77 | seg_rate=0.000 | recovery=63/72 | lat=40.43 | final=0/5 | stable=5/5 | overshoot=8.18 | regret_auc=84.08 | avg_d=14.91 | final_d=12.80 | utility=0.853 | regret=0.147 | corr=5007.2 | deaths=0.0 | CO=0.0 | false_events=2546.8
+
+========================================================================
+CONTINUOUS @ signal_level=3
+seed=0 | segments=0/16 | recover=15/15 | lat=50.00 | final=False | stable=True | overshoot=7.83 | regret_auc=81.87 | avg_d=14.46 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=1 | segments=0/16 | recover=12/15 | lat=32.17 | final=False | stable=True | overshoot=8.06 | regret_auc=86.49 | avg_d=14.88 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=2 | segments=0/17 | recover=16/16 | lat=37.19 | final=False | stable=True | overshoot=8.03 | regret_auc=87.08 | avg_d=14.87 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=3 | segments=0/15 | recover=10/14 | lat=42.50 | final=False | stable=True | overshoot=8.28 | regret_auc=87.21 | avg_d=15.12 | d_final=24.0 | utility=0.780 | regret=0.220 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=4 | segments=0/13 | recover=10/12 | lat=40.30 | final=False | stable=True | overshoot=8.72 | regret_auc=77.75 | avg_d=15.20 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+SUMMARY level=3 variant=CONTINUOUS | false=0.35 delay=8 rnoise=0.10 | segments=0/77 | seg_rate=0.000 | recovery=63/72 | lat=40.43 | final=0/5 | stable=5/5 | overshoot=8.18 | regret_auc=84.08 | avg_d=14.91 | final_d=12.80 | utility=0.853 | regret=0.147 | corr=133120.0 | deaths=0.0 | CO=0.0 | false_events=0.0
+
+############################################################################################
+SIGNAL LEVEL 4: false_prob=0.50, delay=12, regret_noise=0.15
+
+========================================================================
+FIELD_DUJ @ signal_level=4
+seed=0 | segments=5/16 | recover=15/15 | lat=9.80 | final=True | stable=True | overshoot=8.65 | regret_auc=85.06 | avg_d=14.69 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4556 | deaths=0 | V=490 | T=394 | M=0 | CO=390 | false_events=4068
+seed=1 | segments=5/16 | recover=14/15 | lat=13.43 | final=False | stable=True | overshoot=8.62 | regret_auc=85.96 | avg_d=14.78 | d_final=40.0 | utility=0.462 | regret=0.538 | corr=4630 | deaths=0 | V=495 | T=360 | M=0 | CO=360 | false_events=4012
+seed=2 | segments=5/17 | recover=16/16 | lat=9.75 | final=True | stable=True | overshoot=7.77 | regret_auc=81.16 | avg_d=14.00 | d_final=0.0 | utility=1.000 | regret=0.000 | corr=4527 | deaths=0 | V=491 | T=365 | M=0 | CO=365 | false_events=4043
+seed=3 | segments=7/15 | recover=14/14 | lat=15.36 | final=False | stable=True | overshoot=8.47 | regret_auc=84.82 | avg_d=14.46 | d_final=12.0 | utility=0.890 | regret=0.110 | corr=4606 | deaths=0 | V=493 | T=363 | M=0 | CO=362 | false_events=4073
+seed=4 | segments=4/13 | recover=11/12 | lat=10.00 | final=False | stable=True | overshoot=5.92 | regret_auc=58.57 | avg_d=11.49 | d_final=28.0 | utility=0.619 | regret=0.381 | corr=4601 | deaths=0 | V=484 | T=368 | M=0 | CO=361 | false_events=4063
+SUMMARY level=4 variant=FIELD_DUJ | false=0.50 delay=12 rnoise=0.15 | segments=26/77 | seg_rate=0.339 | recovery=70/72 | lat=11.67 | final=2/5 | stable=5/5 | overshoot=7.89 | regret_auc=79.11 | avg_d=13.88 | final_d=16.00 | utility=0.794 | regret=0.206 | corr=4584.0 | deaths=0.0 | CO=367.6 | false_events=4051.8
+
+========================================================================
+FULLER_DUJ @ signal_level=4
+seed=0 | segments=3/16 | recover=15/15 | lat=31.80 | final=False | stable=True | overshoot=9.12 | regret_auc=84.36 | avg_d=15.69 | d_final=12.0 | utility=0.901 | regret=0.099 | corr=4955 | deaths=0 | V=493 | T=20 | M=0 | CO=0 | false_events=3425
+seed=1 | segments=1/16 | recover=12/15 | lat=25.00 | final=False | stable=True | overshoot=7.22 | regret_auc=76.09 | avg_d=13.75 | d_final=24.0 | utility=0.686 | regret=0.314 | corr=5174 | deaths=0 | V=495 | T=16 | M=0 | CO=0 | false_events=3384
+seed=2 | segments=3/17 | recover=12/16 | lat=39.50 | final=False | stable=True | overshoot=8.73 | regret_auc=84.45 | avg_d=15.82 | d_final=8.0 | utility=0.913 | regret=0.087 | corr=4891 | deaths=0 | V=489 | T=23 | M=0 | CO=0 | false_events=3447
+seed=3 | segments=2/15 | recover=8/14 | lat=36.25 | final=False | stable=True | overshoot=8.79 | regret_auc=88.13 | avg_d=15.49 | d_final=16.0 | utility=0.870 | regret=0.130 | corr=5221 | deaths=0 | V=489 | T=22 | M=0 | CO=0 | false_events=3538
+seed=4 | segments=2/13 | recover=11/12 | lat=50.09 | final=False | stable=True | overshoot=8.59 | regret_auc=81.32 | avg_d=15.06 | d_final=40.0 | utility=0.462 | regret=0.538 | corr=5188 | deaths=0 | V=486 | T=20 | M=0 | CO=0 | false_events=3407
+SUMMARY level=4 variant=FULLER_DUJ | false=0.50 delay=12 rnoise=0.15 | segments=11/77 | seg_rate=0.143 | recovery=58/72 | lat=36.53 | final=0/5 | stable=5/5 | overshoot=8.49 | regret_auc=82.87 | avg_d=15.16 | final_d=20.00 | utility=0.766 | regret=0.234 | corr=5085.8 | deaths=0.0 | CO=0.0 | false_events=3440.2
+
+========================================================================
+PRIORITY_DUJ @ signal_level=4
+seed=0 | segments=0/16 | recover=15/15 | lat=50.00 | final=False | stable=True | overshoot=7.83 | regret_auc=81.87 | avg_d=14.46 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=4992 | deaths=0 | V=492 | T=0 | M=0 | CO=0 | false_events=3600
+seed=1 | segments=0/16 | recover=12/15 | lat=32.17 | final=False | stable=True | overshoot=8.06 | regret_auc=86.49 | avg_d=14.88 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=5042 | deaths=0 | V=495 | T=0 | M=0 | CO=0 | false_events=3634
+seed=2 | segments=0/17 | recover=16/16 | lat=37.19 | final=False | stable=True | overshoot=8.03 | regret_auc=87.08 | avg_d=14.87 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=5014 | deaths=0 | V=489 | T=0 | M=0 | CO=0 | false_events=3658
+seed=3 | segments=0/15 | recover=10/14 | lat=42.50 | final=False | stable=True | overshoot=8.28 | regret_auc=87.21 | avg_d=15.12 | d_final=24.0 | utility=0.780 | regret=0.220 | corr=5009 | deaths=0 | V=491 | T=0 | M=0 | CO=0 | false_events=3701
+seed=4 | segments=0/13 | recover=10/12 | lat=40.30 | final=False | stable=True | overshoot=8.72 | regret_auc=77.75 | avg_d=15.20 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=4951 | deaths=0 | V=485 | T=0 | M=0 | CO=0 | false_events=3608
+SUMMARY level=4 variant=PRIORITY_DUJ | false=0.50 delay=12 rnoise=0.15 | segments=0/77 | seg_rate=0.000 | recovery=63/72 | lat=40.43 | final=0/5 | stable=5/5 | overshoot=8.18 | regret_auc=84.08 | avg_d=14.91 | final_d=12.80 | utility=0.853 | regret=0.147 | corr=5001.6 | deaths=0.0 | CO=0.0 | false_events=3640.2
+
+========================================================================
+CONTINUOUS @ signal_level=4
+seed=0 | segments=0/16 | recover=15/15 | lat=50.00 | final=False | stable=True | overshoot=7.83 | regret_auc=81.87 | avg_d=14.46 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=1 | segments=0/16 | recover=12/15 | lat=32.17 | final=False | stable=True | overshoot=8.06 | regret_auc=86.49 | avg_d=14.88 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=2 | segments=0/17 | recover=16/16 | lat=37.19 | final=False | stable=True | overshoot=8.03 | regret_auc=87.08 | avg_d=14.87 | d_final=4.0 | utility=0.967 | regret=0.033 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=3 | segments=0/15 | recover=10/14 | lat=42.50 | final=False | stable=True | overshoot=8.28 | regret_auc=87.21 | avg_d=15.12 | d_final=24.0 | utility=0.780 | regret=0.220 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+seed=4 | segments=0/13 | recover=10/12 | lat=40.30 | final=False | stable=True | overshoot=8.72 | regret_auc=77.75 | avg_d=15.20 | d_final=16.0 | utility=0.776 | regret=0.224 | corr=133120 | deaths=0 | V=0 | T=0 | M=0 | CO=0 | false_events=0
+SUMMARY level=4 variant=CONTINUOUS | false=0.50 delay=12 rnoise=0.15 | segments=0/77 | seg_rate=0.000 | recovery=63/72 | lat=40.43 | final=0/5 | stable=5/5 | overshoot=8.18 | regret_auc=84.08 | avg_d=14.91 | final_d=12.80 | utility=0.853 | regret=0.147 | corr=133120.0 | deaths=0.0 | CO=0.0 | false_events=0.0
+
+====================================================================================================================
+V31C ADVERSARIAL SIGNAL MATRIX
+level | false | delay | rnoise | variant | segments | recovery | final | stable | seg_rate | latency | overshoot | regret_auc | avg_d | final_d | utility | regret | corr | deaths | V | T | M | CO | false_events
+0 | 0.00 | 0 | 0.00 | FIELD_DUJ | 73/77 | 71/72 | 4/5 | 5/5 | 0.947 | 2.20 | 0.95 | 10.68 | 1.88 | 1.60 | 0.982 | 0.018 | 4665.6 | 0.0 | 490.6 | 57.6 | 0.0 | 57.6 | 0.0
+0 | 0.00 | 0 | 0.00 | FULLER_DUJ | 22/77 | 65/72 | 0/5 | 5/5 | 0.298 | 41.86 | 6.66 | 73.09 | 12.88 | 16.80 | 0.791 | 0.209 | 5129.8 | 0.0 | 491.4 | 23.6 | 0.0 | 0.0 | 0.0
+0 | 0.00 | 0 | 0.00 | PRIORITY_DUJ | 0/77 | 63/72 | 0/5 | 5/5 | 0.000 | 40.43 | 8.18 | 84.08 | 14.91 | 12.80 | 0.853 | 0.147 | 5023.0 | 0.0 | 490.8 | 0.0 | 0.0 | 0.0 | 0.0
+0 | 0.00 | 0 | 0.00 | CONTINUOUS | 0/77 | 63/72 | 0/5 | 5/5 | 0.000 | 40.43 | 8.18 | 84.08 | 14.91 | 12.80 | 0.853 | 0.147 | 133120.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0
+1 | 0.10 | 2 | 0.03 | FIELD_DUJ | 69/77 | 71/72 | 3/5 | 5/5 | 0.898 | 4.63 | 2.18 | 21.58 | 3.83 | 7.20 | 0.906 | 0.094 | 4719.4 | 0.0 | 489.6 | 83.2 | 0.0 | 82.4 | 753.6
+1 | 0.10 | 2 | 0.03 | FULLER_DUJ | 18/77 | 65/72 | 0/5 | 5/5 | 0.245 | 45.46 | 7.45 | 79.04 | 13.85 | 16.00 | 0.795 | 0.205 | 5141.4 | 0.0 | 491.0 | 23.0 | 0.0 | 0.0 | 693.0
+1 | 0.10 | 2 | 0.03 | PRIORITY_DUJ | 0/77 | 63/72 | 0/5 | 5/5 | 0.000 | 40.43 | 8.18 | 84.08 | 14.91 | 12.80 | 0.853 | 0.147 | 5014.0 | 0.0 | 489.4 | 0.0 | 0.0 | 0.0 | 734.2
+1 | 0.10 | 2 | 0.03 | CONTINUOUS | 0/77 | 63/72 | 0/5 | 5/5 | 0.000 | 40.43 | 8.18 | 84.08 | 14.91 | 12.80 | 0.853 | 0.147 | 133120.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0
+2 | 0.20 | 5 | 0.06 | FIELD_DUJ | 61/77 | 70/72 | 3/5 | 5/5 | 0.789 | 7.62 | 3.83 | 37.05 | 6.57 | 12.80 | 0.830 | 0.170 | 4723.8 | 0.0 | 490.2 | 142.0 | 0.0 | 139.8 | 1530.8
+2 | 0.20 | 5 | 0.06 | FULLER_DUJ | 18/77 | 61/72 | 1/5 | 5/5 | 0.243 | 50.17 | 7.99 | 82.98 | 14.41 | 17.60 | 0.782 | 0.218 | 5200.2 | 0.0 | 490.4 | 21.2 | 0.0 | 0.0 | 1375.2
+2 | 0.20 | 5 | 0.06 | PRIORITY_DUJ | 0/77 | 63/72 | 0/5 | 5/5 | 0.000 | 40.43 | 8.18 | 84.08 | 14.91 | 12.80 | 0.853 | 0.147 | 5019.6 | 0.0 | 490.0 | 0.0 | 0.0 | 0.0 | 1448.6
+2 | 0.20 | 5 | 0.06 | CONTINUOUS | 0/77 | 63/72 | 0/5 | 5/5 | 0.000 | 40.43 | 8.18 | 84.08 | 14.91 | 12.80 | 0.853 | 0.147 | 133120.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0
+3 | 0.35 | 8 | 0.10 | FIELD_DUJ | 50/77 | 70/72 | 3/5 | 5/5 | 0.644 | 10.28 | 5.93 | 59.37 | 10.58 | 12.00 | 0.839 | 0.161 | 4591.2 | 0.0 | 491.0 | 280.0 | 0.0 | 277.4 | 2780.2
+3 | 0.35 | 8 | 0.10 | FULLER_DUJ | 18/77 | 59/72 | 1/5 | 5/5 | 0.235 | 38.73 | 8.70 | 85.44 | 14.96 | 18.40 | 0.792 | 0.208 | 5214.0 | 0.0 | 491.2 | 20.6 | 0.0 | 0.0 | 2385.6
+3 | 0.35 | 8 | 0.10 | PRIORITY_DUJ | 0/77 | 63/72 | 0/5 | 5/5 | 0.000 | 40.43 | 8.18 | 84.08 | 14.91 | 12.80 | 0.853 | 0.147 | 5007.2 | 0.0 | 491.2 | 0.0 | 0.0 | 0.0 | 2546.8
+3 | 0.35 | 8 | 0.10 | CONTINUOUS | 0/77 | 63/72 | 0/5 | 5/5 | 0.000 | 40.43 | 8.18 | 84.08 | 14.91 | 12.80 | 0.853 | 0.147 | 133120.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0
+4 | 0.50 | 12 | 0.15 | FIELD_DUJ | 26/77 | 70/72 | 2/5 | 5/5 | 0.339 | 11.67 | 7.89 | 79.11 | 13.88 | 16.00 | 0.794 | 0.206 | 4584.0 | 0.0 | 490.6 | 370.0 | 0.0 | 367.6 | 4051.8
+4 | 0.50 | 12 | 0.15 | FULLER_DUJ | 11/77 | 58/72 | 0/5 | 5/5 | 0.143 | 36.53 | 8.49 | 82.87 | 15.16 | 20.00 | 0.766 | 0.234 | 5085.8 | 0.0 | 490.4 | 20.2 | 0.0 | 0.0 | 3440.2
+4 | 0.50 | 12 | 0.15 | PRIORITY_DUJ | 0/77 | 63/72 | 0/5 | 5/5 | 0.000 | 40.43 | 8.18 | 84.08 | 14.91 | 12.80 | 0.853 | 0.147 | 5001.6 | 0.0 | 490.4 | 0.0 | 0.0 | 0.0 | 3640.2
+4 | 0.50 | 12 | 0.15 | CONTINUOUS | 0/77 | 63/72 | 0/5 | 5/5 | 0.000 | 40.43 | 8.18 | 84.08 | 14.91 | 12.80 | 0.853 | 0.147 | 133120.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0
+
+FIELD_DUJ ADVERSARIAL SIGNAL CURVE
+level | false | delay | rnoise | seg_rate | latency | regret_auc | utility | final | deaths | CO | false_events
+0 | 0.00 | 0 | 0.00 | 0.947 | 2.20 | 10.68 | 0.982 | 4/5 | 0.0 | 57.6 | 0.0
+1 | 0.10 | 2 | 0.03 | 0.898 | 4.63 | 21.58 | 0.906 | 3/5 | 0.0 | 82.4 | 753.6
+2 | 0.20 | 5 | 0.06 | 0.789 | 7.62 | 37.05 | 0.830 | 3/5 | 0.0 | 139.8 | 1530.8
+3 | 0.35 | 8 | 0.10 | 0.644 | 10.28 | 59.37 | 0.839 | 3/5 | 0.0 | 277.4 | 2780.2
+4 | 0.50 | 12 | 0.15 | 0.339 | 11.67 | 79.11 | 0.794 | 2/5 | 0.0 | 367.6 | 4051.8
+
+Done.
