@@ -55,10 +55,14 @@ Instead of enforcing constraints at every step, the system:
 
 ## Results
 
-See full breakdown:
+Latest:
 
-→ [`docs/results_summary.md`](docs/results_summary.md)
+- [v0.4 adversarial multi-agent stress test](docs/v0_4_adversarial_multi_agent_stress_test.md)
+- [Raw v31c adversarial results](results/v0_4_adversarial/v31c_adversarial_results.txt)
 
+Earlier validation:
+
+- [Edge validation results summary](docs/results_summary.md)
 ---
 ## Limitations
 
