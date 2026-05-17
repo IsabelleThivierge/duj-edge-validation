@@ -1,0 +1,4 @@
+mode,n,trigger_rate,total_correction_cost,avg_latency_ms,avg_combined_risk
+continuous_supervision,7,1.0,14,969.5158,0.79
+duj_event_gate,7,0.8571,6,161.0289,0.7643
+no_gate,7,0.0,0,1060.0242,
