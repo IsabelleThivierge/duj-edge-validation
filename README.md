@@ -1,5 +1,46 @@
 # DUJ Edge Validation
+## Overview
 
+This repository explores **event-triggered invariant steering** for maintaining bounded multi-agent dynamics under adversarial conditions on **edge hardware**.
+
+The core hypothesis:
+
+> **Coordination mechanism design may matter nearly as much as compute scaling for stable multi-agent systems.**
+
+Experiments evaluate whether sparse, event-gated intervention with **DUJ co-occurrence filtering** can maintain viability while dramatically reducing correction cost compared to continuous supervision.
+
+All experiments are run on **Jetson Orin Nano Super** (JetPack 6.2.1, CUDA).
+
+---
+
+## Quick Start
+
+### Install dependencies
+
+```bash
+pip install numpy pandas matplotlib
+
+### Run reproducibility sweep
+
+```bash
+python3 v31c_repro_sweep.py
+### Run adversarial noise sweep
+
+```bash
+python3 v31c_noise_sweep.py
+```
+
+### Run co-occurrence phase sweep
+
+```bash
+python3 v31c_cooccurrence_phase_sweep.py
+```
+
+### Run sweet spot noise robustness sweep
+ 
+```bash
+python3 v31c_sweetspot_noise_sweep.py
+````
 ## Latest Result — Adversarial Multi-Agent Stress Test (v0.4)
 
 Early results suggest that coordination mechanism may matter as much as compute substrate for multi-agent viability.
