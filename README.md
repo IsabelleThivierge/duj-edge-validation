@@ -12,18 +12,20 @@ Experiments evaluate whether sparse, event-gated intervention with **DUJ co-occu
 All experiments are run on **Jetson Orin Nano Super** (JetPack 6.2.1, CUDA).
 
 ---
-
 ## Quick Start
 
 ### Install dependencies
 
 ```bash
 pip install numpy pandas matplotlib
+```
 
 ### Run reproducibility sweep
 
 ```bash
 python3 v31c_repro_sweep.py
+```
+
 ### Run adversarial noise sweep
 
 ```bash
@@ -36,11 +38,12 @@ python3 v31c_noise_sweep.py
 python3 v31c_cooccurrence_phase_sweep.py
 ```
 
-### Run sweet spot noise robustness sweep
- 
+### Run sweet spot robustness sweep
+
 ```bash
 python3 v31c_sweetspot_noise_sweep.py
-````
+```
+
 ## Latest Result — Adversarial Multi-Agent Stress Test (v0.4)
 
 Early results suggest that coordination mechanism may matter as much as compute substrate for multi-agent viability.
