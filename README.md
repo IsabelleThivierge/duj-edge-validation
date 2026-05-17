@@ -44,6 +44,16 @@ python3 v31c_cooccurrence_phase_sweep.py
 python3 v31c_sweetspot_noise_sweep.py
 ```
 
+## Experimental Sweeps
+
+This repository currently includes:
+
+- Reproducibility sweep (50 seeds)
+- Adversarial noise sweep
+- Co-occurrence phase sweep
+- Sweet spot robustness sweep
+- Extreme stress testing
+
 ## Latest Result — Adversarial Multi-Agent Stress Test (v0.4)
 
 Early results suggest that coordination mechanism may matter as much as compute substrate for multi-agent viability.
