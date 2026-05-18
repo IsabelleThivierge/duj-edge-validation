@@ -41,9 +41,33 @@ This suggests that co-occurrence filtering is the primary driver of the observed
 
 ## Reproduce
 
+Clone the repository:
+
 ```bash
-pip install -r requirements.txt
-python3 run_v1_flagship.py --agents 5000 --steps 1000 --seeds 50 --outdir results
+git clone https://github.com/IsabelleThivierge/duj-edge-validation.git
+cd duj-edge-validation
+```
+
+Install dependencies:
+
+```bash
+pip install -r v1_flagship/requirements.txt
+```
+
+Run the flagship experiment:
+
+```bash
+python3 v1_flagship/run_v1_flagship.py \
+    --agents 5000 \
+    --steps 1000 \
+    --seeds 50 \
+    --outdir v1_flagship/results
+```
+
+Generate figures:
+
+```bash
+python3 v1_flagship/plot_flagship.py
 ```
 
 ## Output
