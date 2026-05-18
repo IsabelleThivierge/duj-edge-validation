@@ -56,6 +56,8 @@ The run generates:
 
 ## Scope and Limitations
 
-This is a centralized edge validation experiment executed on Jetson Orin Nano. It does not yet demonstrate fully distributed hardware coordination.
+This experiment uses 5,000 simulated agents executed in a centralized simulation on Jetson Orin Nano. The agents are not 5,000 physical robots, distributed devices, or independent concurrent OS processes.
+
+The result demonstrates centralized edge execution and empirical coordination behavior under the tested simulation configuration. It does not yet demonstrate fully distributed hardware coordination.
 
 The result should be interpreted as an empirical stress test under the tested configuration, not as a formal proof of stability.
