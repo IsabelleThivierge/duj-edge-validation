@@ -14,6 +14,18 @@ Under tested conditions on Jetson Orin Nano, DUJ-style event-gated steering main
 
 This corresponds to an approximately 97.7% correction budget reduction.
 
+## Experimental Configuration
+
+- Hardware: NVIDIA Jetson Orin Nano
+- Agents: 5,000
+- Steps: 1,000
+- Seeds: 50
+- Configuration: centralized edge validation experiment
+
+## Core Hypothesis
+
+Coordination overhead can become a tighter scaling bottleneck than raw compute in large multi-agent systems.
+
 ## Summary
 
 | Mode | Failure Rate | Correction Budget | Latency Mean |
@@ -25,7 +37,7 @@ This corresponds to an approximately 97.7% correction budget reduction.
 
 ## Key Observation
 
-Simple event gating without co-occurrence filtering produced almost no correction-budget savings versus continuous supervision. The large reduction appears only in the DUJ event-gated condition, suggesting that co-occurrence filtering is the main driver of sparsity in this experiment.
+This suggests that co-occurrence filtering is the primary driver of the observed sparsity in event-gated invariant steering under these tested conditions.
 
 ## Reproduce
 
