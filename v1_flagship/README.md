@@ -74,9 +74,9 @@ python3 v1_flagship/plot_flagship.py
 
 The run generates:
 
-- `results/v31c_raw.csv`
-- `results/v31c_summary.csv`
-- `results/v31c_summary.txt`
+- `v1_flagship/results/v31c_raw.csv`
+- `v1_flagship/results/v31c_summary.csv`
+- `v1_flagship/results/v31c_summary.txt`
 
 ## Scope and Limitations
 
