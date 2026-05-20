@@ -8,6 +8,10 @@ A real-time visualization of DUJ swarm dynamics running locally on the NVIDIA Je
   <img src="./docs/assets/duj_swarm.gif" width="700">
 </p>
 
+<p align="center">
+  <em>Green = stable agents • Yellow = correction events</em>
+</p>
+
 ## Overview
 
 This repository explores **event-triggered invariant steering** for maintaining bounded multi-agent dynamics under adversarial conditions on **edge hardware**.
