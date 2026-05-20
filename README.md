@@ -4,7 +4,9 @@
 
 A real-time visualization of DUJ swarm dynamics running locally on the NVIDIA Jetson Orin Nano.
 
-![DUJ Living Swarm](docs/assets/duj_swarm.gif)
+<p align="center">
+  <img src="./docs/assets/duj_swarm.gif" width="700">
+</p>
 
 ## Overview
 
