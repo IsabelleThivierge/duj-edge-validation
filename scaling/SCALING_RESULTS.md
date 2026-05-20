@@ -1,5 +1,29 @@
 # DUJ Scaling Experiments — Jetson Orin Nano
 
+## 1B Resident-Style Result
+
+Configuration:
+
+- Parents: 200,000,000
+- Children: 800,000,000
+- Total agents: 1,000,000,000
+- Steps: 10
+
+Observed:
+
+- Zero violations from steps 0–7
+- 2 corrections at step 8
+- 12 corrections at step 9
+- Stable post-warmup latency: ~3362 ms/step
+- No crash, no OOM, no thermal instability
+- Sparse corrections only emerged late in the run
+
+Interpretation:
+
+This test demonstrates **1 billion resident-style logical DUJ agents** executing stably on a single Jetson Orin Nano Super (8GB). Unlike the streamed 1B test, this configuration keeps the resident-style hierarchical DUJ structure active across the run.
+
+The separate 1T streamed test is a throughput experiment (batched logical processing), not a resident-state result.
+
 ## Environment
 
 - Device: NVIDIA Jetson Orin Nano Super (8GB)
