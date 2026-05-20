@@ -12,6 +12,14 @@ A real-time visualization of DUJ swarm dynamics running locally on the NVIDIA Je
   <em>Green = stable agents • Yellow = correction events</em>
 </p>
 
+## Key Results
+
+- **1B resident-style logical DUJ agents** executed on a single Jetson Orin Nano Super (8GB)
+- **Zero violations through steps 0–7**
+- **Sparse corrections only emerged late in the run**
+- **No crash, no OOM, no thermal instability**
+- **~3.36 s/step post-warmup at 1B resident-style scale**
+
 ## Overview
 
 This repository explores **event-triggered invariant steering** for maintaining bounded multi-agent dynamics under adversarial conditions on **edge hardware**.
