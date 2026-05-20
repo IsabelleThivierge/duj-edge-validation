@@ -1,4 +1,11 @@
 # DUJ Edge Validation
+
+## DUJ Living Swarm Visualization
+
+A real-time visualization of DUJ swarm dynamics running locally on the NVIDIA Jetson Orin Nano.
+
+![DUJ Living Swarm](docs/assets/duj_swarm.gif)
+
 ## Overview
 
 This repository explores **event-triggered invariant steering** for maintaining bounded multi-agent dynamics under adversarial conditions on **edge hardware**.
