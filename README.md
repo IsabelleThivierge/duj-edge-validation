@@ -67,16 +67,6 @@ python3 v31c_cooccurrence_phase_sweep.py
 python3 v31c_sweetspot_noise_sweep.py
 ```
 
-## Experimental Sweeps
-
-This repository currently includes:
-
-- Reproducibility sweep (50 seeds)
-- Adversarial noise sweep
-- Co-occurrence phase sweep
-- Sweet spot robustness sweep
-- Extreme stress testing
-
 ## Resources
 
 - 📄 [Experiment note](docs/v0_4_adversarial_multi_agent_stress_test.md)
