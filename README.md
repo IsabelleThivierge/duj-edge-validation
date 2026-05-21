@@ -4,6 +4,8 @@
 
 A real-time visualization of DUJ swarm dynamics running locally on the NVIDIA Jetson Orin Nano.
 
+**Note:** The visualization shows a representative **10K-agent swarm for interpretability**, while large-scale resident-style experiments executed **up to 1 billion logical DUJ agents** on a single Jetson Orin Nano Super (8GB).
+
 <p align="center">
   <img src="./docs/assets/duj_swarm.gif" width="700">
 </p>
