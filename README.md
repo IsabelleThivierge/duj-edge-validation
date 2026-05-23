@@ -72,5 +72,5 @@ python3 v31c_sweetspot_noise_sweep.py
 - 📄 [Experiment note](docs/v0_4_adversarial_multi_agent_stress_test.md)
 - 📊 [Raw results](results/v0_4_adversarial/v31c_adversarial_results.txt)
 - 📄 [V31C experimental results](docs/v31c_experimental_results.md)
-
+- 📄 [V41 macro activation test](docs/v41_macro_activation_test.md)
 
