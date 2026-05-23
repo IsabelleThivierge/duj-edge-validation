@@ -66,6 +66,22 @@ python3 v31c_cooccurrence_phase_sweep.py
 ```bash
 python3 v31c_sweetspot_noise_sweep.py
 ```
+## Experimental Progression
+
+The repository evolved through progressively harder coordination tests:
+
+- **V31C** — baseline adversarial coordination under signal corruption
+- **V39** — layer ablation sweep to isolate micro, meso, and macro contributions
+- **V40** — delayed micro propagation test showing meso activation under slower local intervention
+- **V41** — macro activation test demonstrating that higher-layer intervention becomes necessary under stronger shocks and delayed lower layers
+
+Emerging experimental pattern:
+
+```text
+Mild regime → micro sufficient
+Delayed local correction → meso becomes useful
+Harsh propagation regime → macro becomes necessary
+```
 
 ## Resources
 
