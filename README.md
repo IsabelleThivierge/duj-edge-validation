@@ -73,8 +73,7 @@ The repository evolved through progressively harder coordination tests:
 - **V31C** — baseline adversarial coordination under signal corruption
 - **V39** — layer ablation sweep to isolate micro, meso, and macro contributions
 - **V40** — delayed micro propagation test showing meso activation under slower local intervention
-- **V41** — macro activation test demonstrating that higher-layer intervention becomes necessary under stronger shocks and delayed lower layers
-
+- **V41** — macro activation test demonstrating that higher-layer intervention becomes necessary under stronger perturbation regimes
 Emerging experimental pattern:
 
 ```text
